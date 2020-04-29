@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Contreras</title>
+  </head>
+  <body>
+      <main>
+          <form>
+              <fieldset>
+                  <legend>Plese enter you contac details</legend>
+                  <label for="username" id="user-name" >Yor name (required)<abbr title="required">*</abbr>
+                    <input  id="username" type="text"  aria-required="true" required>
+                  </label>
+                  <label for="email" id="user-email">Yor Email
+                    <input id="email"  type="email" aria-required="true" required>
+                  </label>
+                  <label for="phonenumber" id="user-phone-number">Yor name
+                    <input id="phonenumber"  type="number" aria-required="true" required>
+                  </label>
+                  
+              </fieldset>
+              <fieldset>
+                <legend>Plese selct the curses</legend>
+                <input type="checkbox" id="web" value="Web Developer"> 
+                <label for="web">Web Developer</label>
+                <br>
+                <label for="react">
+                    <input type="checkbox" id="react" value="React Developer"> React Developer
+                </label>
+                <br>
+                <label for="fullstack">
+                    <input type="checkbox" id="fullstack" value="Fullstack Developer"> Fullstack Developer
+                </label>
+                <br>
+                <label for="other">
+                    <input type="checkbox" id="other" value="Other"> Other
+                </label>
+                <br>
+              </fieldset>
+
+              <label for="message">Pleas enter a message (optional)</label>
+                <br>
+                <br>
+            <textarea name="" id="message" cols="25" rows="5" placeholder="Put a message"></textarea>
+              <br>
+              <button>Send message</button>
+              <button type="reset">Rest form</button>
+
+          </form>
+      </main>
+  </body>
+</html>     

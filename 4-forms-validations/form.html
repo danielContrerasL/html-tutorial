@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Government Subsidy</title>
+    </head>
+<body>
+    <header>
+        <h1>Government Subsidy</h1>
+        <h2>Subcide for athletes</h2>
+    </header>
+    <main>
+        <h3>This is a form to apply for a sport subsidy</h3>
+        <form>
+            <fieldset>
+                <legend>User Info</legend>
+                <label for="name">
+                    Name: 
+                    <input required type="text" id="name" name="user_name">
+                </label>
+                <label for="lastName">
+                    Last name:
+                    <input required type="text" id="lastName" name="user_last_name">
+                </label>
+                <label for="email">
+                    Email: 
+                    <input required type="email" id="email" name="user_email">
+                </label>
+            </fieldset>
+            <label for="birthDate">
+                Select your birth date:
+                <input required type="date" id="birthDate" name="user_birth_date" value="2020-04-24" min="1920-01-01" max="2020-12-31">
+            </label>
+            <fieldset>
+                <legend>Choose your gender: </legend>
+                <label for="gender">Gender: </label><select id="gender" required>
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Choose your socioeconomic status:</legend>
+                <input required id="low" type="radio" name="status" value="low">
+                <label for="low">Low</label>
+                <input required id="medium" type="radio" name="status" value="medium">
+                <label for="medium">Medium</label>
+                <input required id="high" type="radio" name="status" value="high">
+                <label for="high">Medium</label>
+            </fieldset>
+            <fieldset>
+                <legend>Witch are your hobbies</legend>
+                <label for="basketball"><input type="checkbox" id="basketball" value="basketball">
+                    Basketball
+                </label>
+                <label for="soccer"><input type="checkbox" id="soccer" value="soccer">
+                    Soccer
+                </label>
+                <label for="swimming"><input type="checkbox" id="swimming" value="swimming">
+                    Swimming
+                </label>
+                <label for="volleyball"><input type="checkbox" id="volleyball" value="volleyball">
+                    volleyball
+                </label>
+            </fieldset>
+            <label for="profile_picture">Choose a profile picture:</label>
+            <input required type="file" id="profile_picture" name="profile_picture" accept="image/png, image/jpeg">
+            <br>
+            <button name="send" id="btm-send">Send</button>
+            <button type="reset" name="clean" id="btm-clean">Clean</button>
+        </form>
+    </main>
+  </body>
+</html>
